@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset = "utf-8">
         <title>Beranda</title>
         <link href="style.css" rel="stylesheet">
         <style>
@@ -13,7 +13,7 @@
             }
 
             nav{
-                background-color: #8E1616;
+                background-color: #7886C7;
                 border-radius: 5px;
             }
 
@@ -34,15 +34,6 @@
             }
 
             aside{
-                flex: 1;
-                background-color: #FFF2F2;
-                padding: 10px;
-                border-radius: 5px;
-                box-shadow: 0 2px 4px rgba(0, 0,0,0.1);
-                margin-top: 10px;
-            }
-
-            div{
                 flex: 1;
                 background-color: #FFF2F2;
                 padding: 10px;
@@ -85,7 +76,95 @@
                 box-shadow: 0 2px 4px rgba(0, 0,0,0.1) ;
             }
 
-           
+            div{
+                border-radius: 5px;
+            }
+
+            .content-wrapper {
+                display: flex;
+                padding: 20px;
+                flex-direction: row;
+            }
+
+            .main-content{
+                flex: 3;
+                padding-right: 20px;
+            }
+
+            .column {
+                float: left;
+                padding: 10px;
+            }
+
+            .column.side{
+                width: 25%;
+            }
+
+            .column.middle{
+                width: 30%;
+            }
+
+            .row::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            footer{
+                background-color: #7886C7;
+                padding: 10px;
+                text-align: center;
+                margin-top: 20px;
+            }
+
+            @media screen and (max-width: 600px) {
+                .column.side, .column.middle{
+                    width: auto;
+                }
+            }
+
+            @media (max-width: 768px){
+                .content-wrapper{
+                    flex-direction: column;
+                    padding: 10px;
+                }
+
+
+                .main-content{
+                    padding-right: 0;
+                    margin-bottom: 20px;
+                }
+
+                nav ul{
+                    text-align: left;
+                }
+
+                nav li {
+                    display: block;
+                    margin-bottom: 5px;
+                }
+
+                iframe {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            @media (max-width:480px) {
+                body{
+                    margin: 10px;
+                }
+
+
+                h1 {
+                    font-size: 1.5em;
+                }
+
+                h2 {
+                    font-size: 1.2em;
+                }
+            }
+     
 
         </style>
         
@@ -110,18 +189,18 @@
         <div style="display: flex; padding: 20px;">
         
             <div style="flex: 3; padding-right: 20px;">
-                <img src="untukberanda.jpg" alt="foto profil" class="profile-pic"width="1000px" height="400px"style="margin-top:30px; ">
+                <img src="untukberanda.jpg" alt="foto profil" class="profile-pic"width="700px" height="300px"style="margin-top:30px; ">
 
                 <div style=" background-color: #A9B5DF ;padding: 0px;">
             
                     <h1>About Me</h1>
                 
                     <p>
-                        01/03/25. Namaku Yehuda Excelfino. Aku lahir di Yogyakarta pada hari Senin yang tenang, 10 Oktober 2005 — namun kini menetap dan menoreh kisah di Ambon, tepatnya di Benteng Atas. Usia 19 tahun ini aku habiskan untuk merangkai mimpi satu demi satu. Jejak langkahku dimulai dari SD Teladan, berlanjut ke SMP Negeri 6 Ambon, kemudian SMA Negeri 1 Ambon, dan kini aku melanjutkan perjalanan ilmuku di Universitas Pattimura, menekuni Ilmu Komputer dalam naungan jurusan Matematika. Di antara deretan kode dan teori, aku menyimpan hobi yang tak biasa: memotret senja dan langit—lukisan alam yang tak pernah sama dua kali. Musik pun mengalir di sela waktu; jari-jari ini kadang bicara lewat denting nada. Sementara ini, aku juga menjalani pekerjaan sampingan, langkah kecil menuju kemandirian. Aku adalah potongan puisi yang lahir di Yogya, tapi tumbuh bersama cahaya langit Ambon. Jika ingin mengenal lebih dalam, jangan sungkan bertanya—karena setiap cerita punya makna yang ingin dibagikan.
+                        Namaku Yehuda Excelfino. Aku lahir di Yogyakarta pada hari Senin yang tenang, 10 Oktober 2005 — namun kini menetap dan menoreh kisah di Ambon, tepatnya di Benteng Atas. Usia 19 tahun ini aku habiskan untuk merangkai mimpi satu demi satu. Jejak langkahku dimulai dari SD Teladan, berlanjut ke SMP Negeri 6 Ambon, kemudian SMA Negeri 1 Ambon, dan kini aku melanjutkan perjalanan ilmuku di Universitas Pattimura, menekuni Ilmu Komputer dalam naungan jurusan Matematika. Di antara deretan kode dan teori, aku menyimpan hobi yang tak biasa: memotret senja dan langit—lukisan alam yang tak pernah sama dua kali. Musik pun mengalir di sela waktu; jari-jari ini kadang bicara lewat denting nada. Sementara ini, aku juga menjalani pekerjaan sampingan, langkah kecil menuju kemandirian. Aku adalah potongan puisi yang lahir di Yogya, tapi tumbuh bersama cahaya langit Ambon. Jika ingin mengenal lebih dalam, jangan sungkan bertanya—karena setiap cerita punya makna yang ingin dibagikan.
                     </p>
 
                     <h2>
-                        <iframe width="1000" height="540" src="https://www.youtube.com/embed/Z-6figKRfhk?si=FdVVkXCCs1d0IaDk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe width="700" height="340" src="https://www.youtube.com/embed/Z-6figKRfhk?si=FdVVkXCCs1d0IaDk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </h2>
 
             
@@ -131,7 +210,7 @@
             <aside style="flex: 1;background-color: #A9B5DF; padding: 1px;">
                 <h3>Info Tambahan</h3>
                 <p>informasi Tambahan.</p>
-                <img src="WhatsApp Image 2025-04-13 at 22.05.59_7077f54f.jpg" alt="foto profil" class="profile-pic"width="100px" height="10px"style="margin-top:20px;">
+                <img src="WhatsApp Image 2025-04-13 at 22.05.59_7077f54f.jpg" alt="foto profil" class="profile-pic"width="400px" height="200px"style="margin-top:20px;">
                 <ul>
                     <li><a href="https://www.instagram.com/terunabhaktimusicschool/">Music School</a></li>
                     <li><a href="https://www.instagram.com/p/CzOp8bfxtpI/">Festival Band</a></li>
