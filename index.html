@@ -6,84 +6,164 @@
         <link href="style.css" rel="stylesheet">
         <style>
             body {
-                font-family: 'Poppins',sans-serif;
-                line-height: 1.6;
-                margin: 20px;
-                background-color: #FFF2F2;
-            }
+    font-family: 'Poppins',sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #FFF2F2;
+}
 
-            nav{
-                background-color: #8E1616;
-                border-radius: 5px;
-            }
+nav{
+    background-color: #7886C7;
+    border-radius: 5px;
+}
 
-            nav ul{
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-            }
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
 
-            nav li{
-                display: inline;
-                margin-right: 10px;
-            }
+nav li{
+    display: inline;
+    margin-right: 10px;
+}
 
-            nav a{
-                text-decoration: none;
-                color: blue;
-            }
+nav a{
+    text-decoration: none;
+    color: blue;
+}
 
-            aside{
-                flex: 1;
-                background-color: #FFF2F2;
-                padding: 10px;
-                border-radius: 5px;
-                box-shadow: 0 2px 4px rgba(0, 0,0,0.1);
-                margin-top: 10px;
-            }
+aside{
+    flex: 1;
+    background-color: #FFF2F2;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0,0,0.1);
+    margin-top: 10px;
+}
 
-            div{
-                flex: 1;
-                background-color: #FFF2F2;
-                padding: 10px;
-                border-radius: 5px;
-                box-shadow: 0 2px 4px rgba(0, 0,0,0.1);
-                margin-top: 10px;
-            }
+aside h3{
+    color: #FFF2F2;
+}
 
-            aside h3{
-                color: #FFF2F2;
-            }
+aside ul{
+    list-style-type: disc;
+    padding-left: 20px;
 
-            aside ul{
-                list-style-type: disc;
-                padding-left: 20px;
+}
+aside li{
+    margin-bottom: 5px;
+}
 
-            }
-            aside li{
-                margin-bottom: 5px;
-            }
+aside a{
+    text-decoration: none;
+    color: aqua;
+}
+header{
+    border-radius: 5px;
+}
+header h1{
+    margin-top: 0;
+    
+}
 
-            aside a{
-                text-decoration: none;
-                color: aqua;
-            }
-            header{
-                border-radius: 5px;
-            }
-            header h1{
-                margin-top: 0;
-                
-            }
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 10px auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0,0,0.1) ;
+}
 
-            img{
-                display: block;
-                max-width: 100%;
-                height: auto;
-                margin: 10px auto;
-                border-radius: 5px;
-                box-shadow: 0 2px 4px rgba(0, 0,0,0.1) ;
-            }
+div{
+    border-radius: 5px;
+}
+
+.content-wrapper {
+    display: flex;
+    padding: 20px;
+    flex-direction: row;
+}
+
+.main-content{
+    flex: 3;
+    padding-right: 20px;
+}
+
+.column {
+    float: left;
+    padding: 10px;
+}
+
+.column.side{
+    width: 25%;
+}
+
+.column.middle{
+    width: 30%;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer{
+    background-color: #7886C7;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .column.side, .column.middle{
+        width: auto;
+    }
+}
+
+@media (max-width: 768px){
+    .content-wrapper{
+        flex-direction: column;
+        padding: 10px;
+    }
+
+
+    .main-content{
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    nav ul{
+        text-align: left;
+    }
+
+    nav li {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width:480px) {
+    body{
+        margin: 10px;
+    }
+
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+}
 
            
 
